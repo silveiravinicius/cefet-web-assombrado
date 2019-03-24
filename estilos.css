@@ -88,6 +88,23 @@ main {
   padding-bottom: 3em;
 }
 
+.post {
+  position: relative
+  
+}
+
+#posts-principais .titulo {
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 2px;
+  opacity: 0;
+  transition: all 200ms ease;
+}
+
+#posts-principais .titulo:hover {
+  opacity: 1;
+}
+
 #posts-principais {
   padding-top: 1.5em;
 }
@@ -157,6 +174,8 @@ main {
   padding: 1em;
   box-shadow: -4px 0 10px rgba(0, 0, 0, 0.5);
   text-align: center;
+  position: sticky;
+  top: 0px;
 }
 
 #tags h1 {
@@ -181,6 +200,32 @@ main {
 
 .tag-3 {
   font-size: 150%;
+}
+
+#tags span{
+	display:inline-block;
+}
+
+#tags span:active {
+	position: relative;
+    bottom: 2px;
+    right: 2px;
+}
+
+#tags span:hover {
+	cursor:pointer;
+}
+
+#posts-principais .post{
+	position: relative;
+
+}
+#posts-principais .titulo{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(255, 255, 255, 0.5);
+	padding: 10px;
 }
 
 footer {
@@ -279,4 +324,30 @@ footer .texto-rodape {
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+}
+
+.boo{
+  position: absolute;
+  opacity: 0.1;
+
+}
+
+#boo1{
+  left: 10px;
+}
+
+#boo2{
+  left: 210px;
+  
+}
+
+#boo3{
+  left: 410px; 
+}
+
+.boo:hover{
+  opacity: 1;
 }
